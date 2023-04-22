@@ -57,11 +57,12 @@ class HueApi:
                     name = t_cach[str(num)]['name']
                     id = t_cach[str(num)]['uniqueid']
                     state = str(t_cach[str(num)]['state']['on'])
+                    mode = str(t_cach[str(num)]['state']['mode'])
                     bri = str(t_cach[str(num)]['state']['bri'])
                     color = str(t_cach[str(num)]['state']['xy']).split("[")[1].split("]")[0]
                     color_rgb =  self.convert_xy_rgb(float(color.split(", ")[0]), float(color.split(", ")[1]), int(bri))
                     ct = str(t_cach[str(num)]['state']['ct'])
-                    cach_data = (str(num)+"|"+type+"|"+name+"|"+id+"|"+state+"|"+bri+"|"+color+"|"+color_rgb+"|"+ct)
+                    cach_data = (str(num)+"|"+type+"|"+name+"|"+mode+"|"+id+"|"+state+"|"+bri+"|"+color+"|"+color_rgb+"|"+ct)
                 except:
                     break
                 num += 1

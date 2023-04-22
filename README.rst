@@ -1,8 +1,7 @@
-# tgn_smart_home
+Python Lib for Philips Hue
 
 |Build Status|  |Python versions|
 
-Python Lib for Philips Hue
 
 .. ..
 

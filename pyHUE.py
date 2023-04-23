@@ -7,6 +7,7 @@ class HueApi:
     def __init__(self, ip, user):
         self.ip = ip
         self.user = user
+        #set to homeautomation
 
     def convert_xy_rgb(self, x, y, bri=1):
         z = 1.0 - x - y
@@ -52,7 +53,6 @@ class HueApi:
             out = []
             while(True):
                 try:
-                    lamp_num = t_cach[str(num)]
                     type = t_cach[str(num)]['type']
                     name = t_cach[str(num)]['name']
                     id = t_cach[str(num)]['uniqueid']
@@ -82,6 +82,10 @@ class HueApi:
     def change_brightness(self, brightness, num_lamp):
         put(f'http://{self.ip}/api/{self.user}/lights/{num_lamp}/state',
             json={'bri': brightness})
+        
+    def change_mode(self, mode_a, num_lamp):
+        put(f'http://{self.ip}/api/{self.user}/lights/{num_lamp}/state',
+            json={'mode': mode_a})
 
     def change_color(self, red, green, blue, num_lamp):
         put(f'http://{self.ip}/api/{self.user}/lights/{num_lamp}/state',

@@ -2,7 +2,7 @@ from tgn_hue_lib import HueApi
 import time
 
 hue_bridge_ip = "192.168.0.34"
-hue_bridge_user_id = "wpBmTd9f7UEcK-ZLs7oypzKoeBJ3Nl0nFhrYaxBd"
+hue_bridge_user_id = "Hue Bridge User"
 
 #ini api
 hue = HueApi(ip=hue_bridge_ip,user=hue_bridge_user_id)

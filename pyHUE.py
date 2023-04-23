@@ -7,7 +7,6 @@ class HueApi:
     def __init__(self, ip, user):
         self.ip = ip
         self.user = user
-        #set to homeautomation
 
     def convert_xy_rgb(self, x, y, bri=1):
         z = 1.0 - x - y

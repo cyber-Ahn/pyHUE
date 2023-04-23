@@ -1,4 +1,4 @@
-from tgn_hue_lib import HueApi
+from pyHUE import HueApi
 import time
 
 hue_bridge_ip = "192.168.0.34"

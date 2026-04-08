@@ -11,7 +11,7 @@ Installation:
 * mv pyHUE.py /usr/local/lib/python3.9/dist-packages/
 .. ..
 
-.. |Build Status| image:: https://caworks-sl.de/images/build.png
-   :target: https://caworks-sl.de
-.. |Python versions| image:: https://caworks-sl.de/images/python.png
-   :target: https://caworks-sl.de
+.. |Build Status| image:: https://cyber-ahn.com/images/build.png
+   :target: https://cyber-ahn.com
+.. |Python versions| image:: https://cyber-ahn.com/images/python.png
+   :target: https://cyber-ahn.com
